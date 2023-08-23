@@ -197,79 +197,14 @@ a{
     transform:translate(0, 0px); opacity:1
 }
 .terminal {
-    background-color: black;
-    color: lime;
-    font-family: monospace;
-    padding: 10px;
-    width: 400px;
-  background-color: black;
-  color: lime;
+  background-color: white;
+  color: #0bf4d2;
   font-family: monospace;
   padding: 10px;
-  width: 400px;
+  height: 480px;
+  width: 640px;
   overflow-y: auto;
-}
-
-.prompt {
-  color: white;
-  display: inline;
-}
-
-.input {
-  display: inline;
-  outline: none;
-  cursor: none;
-}
-
-.input::after {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 100%;
-  background-color: lime;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-  .prompt {
-    color: white;
-    display: inline;
-  }
+  opacity: 0.89;
+  border-radius: 7px;
   
-  .input {
-    display: inline;
-    outline: none;
-
-  }
-  
-  .input::after {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 10px;
-    background-color: lime;
-    animation: blink 1s infinite;
-  }
-  
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
+}

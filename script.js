@@ -1,3 +1,5 @@
+const { Terminal } = require("xterm");
+
 const blob = document.getElementById('blob');
 
 document.addEventListener('mousemove', (e) => {
@@ -9,3 +11,7 @@ document.addEventListener('mousemove', (e) => {
     }, {duration: 1500, fill: "forwards"});
 
 });
+
+var term = new Terminal()
+term.open(document.getElementById('terminal'));
+term.write('HELLO BEYBI!!! $');
