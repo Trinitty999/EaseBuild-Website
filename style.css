@@ -29,28 +29,15 @@ nav{
 }
 #no-nav{
     display: flex;
+    width: 100vw;
+    min-width: 600px;
+    align-items: center;
     justify-content: center;
-    padding-top: 10px;
-}
-hr{
-    width: 88%;
-    height: 3px;
-    left: 0px;
-    border-radius: 6px;
-    background-color: #41ee4c;
-    outline: none;
-    border: none;
-    position: relative;
-    top:-10px
 }
 .navitem{
     color: var(--text);
     font-weight: 600;
     text-decoration: none;
-    margin-right: 10px;
-    transition: 1s;
-    border-radius: 3px;
-    margin-left:5%;
     transition: 0.5s;
 }
 #Header{
@@ -71,8 +58,13 @@ hr{
     -webkit-text-fill-color: transparent;
     transition: ease-in-out;
 }
-.navitem:hover{
+.navitem::after{
+    content: "";
+    position: absolute;
     background-color: var(--accent);
+    height: 3px;
+    width: 2%;
+    
 }
 
 #selection{
@@ -103,7 +95,7 @@ a{
     width: 100%;
     height: 45%;
     transform: scale;
-    background-color: var(--primary);
+    background-color: var(--accent);
     color: #fff;
     padding: 25px;    ;
 }
@@ -198,7 +190,4 @@ a{
   border-radius: 7px;
   opacity: 0.89;
   margin-bottom: 2%;
-}
-::-webkit-scrollbar {
-    display: none;
 }
