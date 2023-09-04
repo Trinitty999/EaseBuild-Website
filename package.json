@@ -1,17 +1,25 @@
 {
   "name": "easebuild-website",
-  "version": "1.0.0",
-  "description": "The website for the EaseBuild utility",
-  "main": "server.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "testjs"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "qvite preview"
   },
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "@types/animejs": "^3.1.7",
+    "@types/node": "^20.5.8",
+    "@types/xterm": "^3.0.0",
+    "vite": "^4.4.5"
+  },
   "dependencies": {
-    "express": "^4.18.2",
-    "nodemon": "^3.0.1",
-    "npkill": "^0.11.3",
+    "animejs": "^3.2.1",
+    "gsap": "^3.12.2",
+    "random": "^4.1.0",
+    "scrolltrigger": "^1.0.1",
+    "scss": "^0.2.4",
     "xterm": "^5.2.1"
   }
 }
