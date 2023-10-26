@@ -15,8 +15,8 @@
             <a href="dwld.html" class="navitem">Contact</a>
         </div>
     </nav>
-    <?php
+    <!-- <?php
         echo "test";
-    ?>
+    ?> -->
 </body>
 </html>
