@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Cutil</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css">
     <script src="node_modules/xterm/lib/xterm.js"></script>
     <script src="node_modules/animejs/lib/anime.min.js"></script>
   </head>
@@ -34,31 +34,6 @@
         <label><b>Download</b></label>
       </button>
     </a>
-
-
-    <div id="timeline">
-      <div id="info">
-        <div id="card"></div>
-      </div>
-      <div id="info">
-        <div id="card"></div>
-      </div>
-      <div id="info">
-        <div id="card"></div>
-      </div>
-      <div id="info">
-        <div id="card"></div>
-      </div>
-      <div id="info">
-        <div id="card"></div>
-      </div>
-      <div id="info">
-        <div id="card"></div>
-      </div>
-      <div id="info">
-        <div id="card"></div>
-      </div>
-    </div>
 
 
     <svg

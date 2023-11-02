@@ -191,4 +191,14 @@ a{
   opacity: 0.89;
   margin-bottom: 2%;
 }
-.card::{}
+
+.card{
+    border-radius: 0.5rem;
+}
+
+.card::before, .card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--background);
+}
