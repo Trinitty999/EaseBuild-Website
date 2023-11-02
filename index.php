@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Cutil</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css">
-    <script src="node_modules/xterm/lib/xterm.js"></script>
-    <script src="node_modules/animejs/lib/anime.min.js"></script>
   </head>
   <body>
     <div id="blob"></div>
