@@ -1,3 +1,6 @@
+const jquery = require('jquery');
+const xterm = require('xterm');
+
 const blob = document.getElementById('blob');
 const titlemotto = document.getElementById('grad');
 
@@ -11,10 +14,9 @@ document.addEventListener('mousemove', (e) => {
 
 });
 
-var date = new Date().getHours();
+var date = new Date().getHours()
 
 
-date = 3
 if (date == 3){
   titlemotto.textContent = "Ur mom"
 }

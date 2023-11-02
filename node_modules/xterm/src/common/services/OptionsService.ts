@@ -3,11 +3,11 @@
  * @license MIT
  */
 
-import { IOptionsService, ITerminalOptions, FontWeight } from 'common/services/Services';
-import { EventEmitter, IEvent } from 'common/EventEmitter';
+import { EventEmitter } from 'common/EventEmitter';
+import { Disposable } from 'common/Lifecycle';
 import { isMac } from 'common/Platform';
 import { CursorStyle, IDisposable } from 'common/Types';
-import { Disposable } from 'common/Lifecycle';
+import { FontWeight, IOptionsService, ITerminalOptions } from 'common/services/Services';
 
 export const DEFAULT_OPTIONS: Readonly<Required<ITerminalOptions>> = {
   cols: 80,
@@ -15,6 +15,7 @@ export const DEFAULT_OPTIONS: Readonly<Required<ITerminalOptions>> = {
   cursorBlink: false,
   cursorStyle: 'block',
   cursorWidth: 1,
+  cursorInactiveStyle: 'outline',
   customGlyphs: true,
   drawBoldTextInBrightColors: true,
   fastScrollModifier: 'alt',
@@ -23,10 +24,12 @@ export const DEFAULT_OPTIONS: Readonly<Required<ITerminalOptions>> = {
   fontSize: 15,
   fontWeight: 'normal',
   fontWeightBold: 'bold',
+  ignoreBracketedPasteMode: false,
   lineHeight: 1.0,
   letterSpacing: 0,
   linkHandler: null,
   logLevel: 'info',
+  logger: null,
   scrollback: 1000,
   scrollOnUserInput: true,
   scrollSensitivity: 1,
