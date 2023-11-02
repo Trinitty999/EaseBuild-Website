@@ -1,6 +1,3 @@
-const jquery = require('jquery');
-const xterm = require('xterm');
-
 const blob = document.getElementById('blob');
 const titlemotto = document.getElementById('grad');
 
